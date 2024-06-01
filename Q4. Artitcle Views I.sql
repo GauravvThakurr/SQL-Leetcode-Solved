@@ -44,7 +44,8 @@ Output:
 | 7    |
 +------+
 
+SELECT DISTINCT v.author_id AS id
+FROM VIEWS v
+INNER JOIN VIEWS e ON v.author_id = e.viewer_id
+ORDER BY v.author_id
 
-select distinct v.author_id as id from views v
-join views e on v.author_id = e.viewer_id
-order by v.author_id
