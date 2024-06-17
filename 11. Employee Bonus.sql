@@ -31,8 +31,8 @@ Return the result table in any order.
 
 The result format is in the following example.
 
-````sql
+
 select name, bonus from employee e
 left join bonus b on b.empid = e.empid
 where coalesce(bonus,0) < 1000
-````
+
