@@ -31,7 +31,6 @@ Write a solution to find the confirmation rate of each user.
 
 Return the result table in any order.
 
-The result format is in the following example.
 
 
 SELECT s.user_id, ROUND(AVG(CASE WHEN c.action = 'confirmed' THEN 1 ELSE 0 END), 2) AS confirmation_rate
